@@ -1,0 +1,220 @@
+<link rel="stylesheet" href="../../../gamerules/styles/desktopstyle.css" type="text/css"/>
+<h1><#RTtwinSpinRulesHeading#/></h1>
+    <!-- Twin Spin Game Rules -->
+
+<ul>
+<li><#RTtwinSpinIntro#/></li>
+    <!-- Twin Spin is a 5-reel video slot with 243 Ways to Win. The game features Wild substitutions and a Twin Reel feature on every spin offering even more chances for big wins. -->
+<li><#RT243ways10levels25coins#/></li>
+		<!-- The game is played with 243 ways to win, 1-10 levels (25 coins per level) and different coin values. -->
+<li><#RTnoBetLines#/></li>
+		<!-- There are no bet lines. -->
+<li><#RTbetLevelInstruction#/></li>
+		<!-- The bet level is set using the LEVEL selector. -->
+<li><#RTcoinValueInstruction#/></li>
+		<!-- The coin value is set using the COIN VALUE selector. -->
+<li><#RTcoinsDisplayValues#/></li>
+		<!-- COINS displays the number of coins the player has available to wager.-->
+<li><#RTmaxBetPlays243highlevCurCoins#/></li>
+		<!-- MAX BET starts a game round with 243 ways to win, the highest bet level and the current coin value. -->
+<li><#RTautoPlays#/></li>
+		<!-- AUTOPLAY automatically plays the game for the selected number of rounds. -->
+<li><#RTwinCombinationPaytable#/></li>
+		<!-- Winning combinations and payouts are made according to the PAYTABLE. -->
+<li><#RTwinCalculationWinWaysCoins#/></li>
+		<!-- A symbol win in coins is equal to the value shown in the PAYTABLE multiplied by the bet level and the amount of times that symbol appears on each of the reels. -->
+<li><#RTwinCalculationWinWaysCurrency#/></li>
+		<!-- The total win in currency is equal to the total win in coins multiplied by the coin value. -->
+<li><#RTexpBetWaysleftRightWinWay#/></li>
+		<!-- Matching symbols in any position on three or more adjacent reels, starting from leftmost reel to the rightmost reel is a winning combination. -->
+<li><#RTexplanationBetWaysPartTwo#/></li>
+		<!-- Only the longest matching combination per symbol is paid. -->
+<li><#RTexplanationWinWaysPartThree#/></li>
+		<!-- More wins are created when additional instances of the same symbol appear on the same reels that create the longest way to win. -->
+<li><#RTsimulWinsDiffSymsAdded#/></li>
+		<!-- Simultaneous wins for different symbols are added. -->
+<li><#RTwinBothWaysCoinWins#/></li>
+		<!-- All wins pay on winning symbol combinations only. -->
+<li><#RTexplanationBetWaysPartFour#/></li>
+		<!-- For the total symbol win, multiply the number of matching symbols appearing on one reel by the number of matching symbols on each other reel in the longest winning combination. Multiply the result by the coin win amount for the longest winning symbol combination according to the PAYTABLE. The total win for the spin is the sum of symbol wins for each symbol type. -->
+</ul>
+
+
+<h2><#RTwildTableHead#/></h2>
+    <!-- Wild -->
+<ul>
+<li><#RTwildAppReelsOnly2345#/></li>
+    <!-- Wild symbols can only appear on reels 2, 3, 4 and 5. -->
+<li><#RTallWildSubstituteMGandFS#/></li>
+    <!-- Wild symbols substitute for all symbols. -->
+</ul>
+
+
+<h2><#RTtwinSpinTwinReelFeatureHeading#/></h2>
+    <!-- Twin Reel Feature -->
+<ul>
+<li><#RTtwinSpinReelFeatureLinkedExplanation#/></li>
+    <!-- Each spin starts with identical, adjacent twin reels that are linked together. During the spin the twin reels can expand to become triplet, quadruplet or even quintuplet reels.-->
+<li><#RTcloneReelLocation#/></li>
+    <!-- At the beginning of each spin, the identical twin reels can appear adjacently on any of the 5 reels.-->
+<li><#RTtwinSpinReelFeatureLinkedProbability#/></li>
+    <!-- The number of reels that are linked together is random and occurs independently for each spin. -->
+
+</ul>
+
+<h2><#RTexampleOfWinWayWinHeading#/></h2>
+	<!-- Example of a Way to Win payout at level 1 -->
+<ul>
+<li><#RTexpOfWinningBetWayTwinSpin#/></li>
+	<!-- 3 matching bar symbols on adjacent reels starting from the leftmost reel awards 15 coins. This is multiplied by 2 (for 2 bar symbols on reel 3), giving a total win of 2 x 15 = 30  -->
+	<img src="../gamerules/images/twin_spin_ways_to_win.jpg" align="center"/><br/>
+</ul>
+
+<h2><#RTgameFunctionsHeading#/></h2>
+
+<ul>
+<li><#RTtableDescribes#/></li>
+</ul>
+
+<table border="" cellpadding="3" style="margin-left:55px;" >
+    <tr bgcolor="rgb(118, 173, 28)">
+        <th align="left"><font color="white"><#RTbuttonTableHead#/></font></th>
+        <th align="left"><font color="white"><#RTfunctionTableHead#/></font></th>
+    </tr>
+   <tr>
+       <td width="100" align="center">
+           <img src="../gamerules/images/spin_button.png" />
+       </td>
+       <td width="400">
+           <#RTstartGameRound#/>
+       </td>
+   </tr>
+
+	<tr>
+		<td align="center"><img src="../gamerules/images/spanner_button.png" /></td>
+		<td><#RTopenSettingsMenu#/></td>
+	</tr>
+
+	<tr>
+		<td align="center"><img src="../gamerules/images/speaker_button.png" /></td>
+		<td><#RTmuteSoundSliderRev#/></td>
+	</tr>
+
+	<tr>
+		<td align="center"><img src="../gamerules/images/questionmark_button.png" /></td>
+		<td><#RTopenGameRules#/></td>
+	</tr>
+
+	<tr>
+		<td align="center"><img src="../gamerules/images/auto_button.png" /></td>
+		<td><#RTopenAutoplayMenu#/><#RTautoplaySelectSpins#/></td>
+	</tr>
+
+	<tr>
+		<td align="center"><img src="../gamerules/images/paytable_button.png" /></td>
+		<td><#RTpaytableButtonsDescRev#/></td>
+	</tr>
+
+	<tr>
+		<td align="center"><img src="../gamerules/images/information_button.png" /></td>
+		<td><#RTinformationIconButtonDesc#/></td>
+		<!-- Click to view the PAYTABLE.  -->
+	</tr>
+
+</table>
+
+<h2><#gameSettingOptionsHeading#/></h2>
+<ul>
+<li><#gameSettingIntro#/></li>
+    <!-- To access game settings, click the spanner icon in the game panel. -->
+<li><b><#RTsettingListQuickSpin#/></b>. <#RTquickSpinDescRev#/> <#RTquickSpinDisclaimer#/></li>
+    <!-- Quick spin. Turns the quick spin option on or off. (Not available in all casinos.) -->
+<li><b><#RTsettingListIntroScreen#/></b>. <#RTintroOffRev#/></li>
+    <!-- Intro screen. Turns the intro screen on or off. -->
+<li><b><#spaceSpin#/></b>. <#RTspacebarspin#/></li>
+    <!-- Spacebar to spin. Turns the spacebar function on or off.-->
+<li><b><#gameHistory#/></b>. <#RTgameHistoryDesc#/> <#RTGameHistNoPlayForFun#/></li>
+    <!-- Game history. Click to view your latest game history. (Not available when PLAYING FOR FUN.) -->
+</ul>
+
+<h2><#advancedAutoplayOptionsHeading#/></h2>
+    <!-- Advanced Autoplay Options -->
+<ul>
+<li><#RTadvancedAutoplayButton#/></li>
+    <!-- To set advanced autoplay options click AUTOPLAY, and then click Advanced settings. -->
+<li><b><#onAnyWin#/></b>. <#anyWinDesc#/></li>
+    <!-- On any win. Stop Autoplay when you win in a round. -->
+<li><b><#ifWinExeeds#/></b>. <#RTsingleWinDescRev#/></li>
+    <!-- If single win exceeds. Stops Autoplay when the amount you win exceeds or equals the amount you specify. -->
+<li><b><#ifCashIncreasesBy#/></b>. <#RTcashIncreasesDescRev#/></li>
+    <!-- If cash increases by. Stops Autoplay if cash increases by the amount you specify. -->
+<li><b><#ifCashDecreasesBy#/></b>. <#RTcashDecreasesDescRev#/></li>
+    <!-- If cash decreases by. Stops Autoplay if cash decreases by the amount you specify. -->
+<li><#RTclickResetToClear#/></li>
+	<!-- Click Reset to clear all selected Stop Autoplay options. -->
+</ul>
+
+<ul>
+<li><#RTautoplayDuringGameRev#/></li>
+	<!-- Note: When changing Autoplay settings during a game round, all settings will take effect once the game round or feature is completed.	 -->
+</ul>
+<ul>
+<li><#RTAutoplayDisconnect#/></li>
+	<!-- Note: If you are disconnected while playing, all Autoplay settings will return to default when you reload the game. -->
+</ul>
+
+<ul>
+<li><#RTautoplayNote#/></li>
+<!-- Note: Some autoplay options are mandatory for some jurisdictions. -->
+</ul>
+
+<h2><#RTreturnToPlayer#/></h2>
+    <!-- Return to Player -->
+<ul>
+<li><#RTtheoreticalReturn#/> 96.6%</li>
+    <!-- The theoretical return to player for this game is 96.6% -->
+</ul>
+<h2><#RTadditionalInformation#/></h2>
+    <!-- Additional information -->
+<ul>
+<li><#RTreferWebSite#/></li>
+     <!-- The following game features and settings may be subject to the terms and conditions of the gaming site. For more information on the following, refer to the gaming website: -->
+<ul>
+<li><#RTunfinishedGameSession2#/></li>
+     <!-- The procedures used to manage unfinished game rounds. -->
+<li><#RTgameSessions2#/></li>
+     <!-- The time after which inactive game sessions automatically end. -->
+</ul>
+<li><#RTmalfunction#/></li>
+    <!-- In the event of malfunction of the gaming hardware/software, all affected game bets and payouts are rendered void and all affected bets refunded. -->
+</ul>
+
+
+<h2><#RTtransGameTerms#/></h2>
+<!-- Translations of Game Terminology -->
+<p><#RTtablePlayLangThnEng#/></p>
+	<!-- Note: The following table is only applicable if you are playing in a language other than English. -->
+<table border="1" cellpadding="3" style="margin-left:55px;" >
+    <tr bgcolor="rgb(118, 173, 28)">
+        <th align="left">
+           <#termEnglish#/>
+	</th>
+	<th align="left">
+            <#termTranslatedTerm#/>
+        </th>
+    </tr>
+
+	<tr>
+    	<td>Wild</td>
+    	<td><#termWild#/></td>
+    </tr>
+
+    <tr>
+    	<td>Twin Reel</td>
+    	<td><#termTwinReel#/></td>
+    </tr>
+
+ </table>
+
+<p></p><p><b><#RTrulesGenerated#/></b></p>
+
